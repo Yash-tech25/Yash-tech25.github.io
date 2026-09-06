@@ -632,15 +632,15 @@ function App() {
 
               <div className="hero-photo-top">
 
-                <span>
+                {/* <span>
                   PORTFOLIO / 2026
-                </span>
+                </span> */}
 
                 <span className="hero-online">
 
                   <span />
 
-                  AVAILABLE
+                  OPEN TO WORK
                 </span>
 
               </div>
