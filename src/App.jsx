@@ -18,6 +18,8 @@ import {
   FaGraduationCap,
   FaSchool,
   FaCode,
+  FaJava,
+  FaAws,
   FaCertificate,
   FaAward,
   FaClock,
@@ -36,6 +38,7 @@ import {
   SiCplusplus,
   SiUdemy,
   SiLeetcode,
+  SiPython,
 } from "react-icons/si";
 
 import recoverAIImage from "./assets/recoverai.png";
@@ -563,16 +566,16 @@ function App() {
                 {" "}•{" "}
               </span>
 
-              C++ Programmer
+              Software Development
             </h2>
 
             <p className="hero-description">
-              Computer Science
-              undergraduate building
-              practical full-stack
-              applications with React,
-              Node.js, Express and
-              MongoDB.
+              Computer Science undergraduate
+              focused on building end-to-end
+              web applications and reliable
+              frontend/backend systems using
+              React, Node.js, Express, MongoDB
+              and cloud technologies.
             </p>
 
             <div className="hero-buttons">
@@ -611,11 +614,15 @@ function App() {
                 </span>
 
                 <span>
-                  DSA
+                  Frontend Systems
                 </span>
 
                 <span>
-                  Backend Systems
+                  Backend & APIs
+                </span>
+
+                <span>
+                  Software Engineering
                 </span>
 
               </div>
@@ -632,9 +639,7 @@ function App() {
 
               <div className="hero-photo-top">
 
-                {/* <span>
-                  PORTFOLIO / 2026
-                </span> */}
+                <span></span>
 
                 <span className="hero-online">
 
@@ -685,8 +690,8 @@ function App() {
             </div>
 
             <div className="floating-tech-card tech-card-cpp">
-              <SiCplusplus />
-              C++
+              <FaCode />
+              REST APIs
             </div>
 
           </div>
@@ -758,23 +763,23 @@ function App() {
                 <p>
                   I’m a Computer Science
                   student at VIT Bhopal
-                  University with an
-                  interest in full-stack
-                  web development,
-                  software engineering
-                  and problem solving.
+                  University focused on
+                  full-stack development,
+                  software engineering and
+                  building practical web
+                  applications from frontend
+                  interfaces to backend systems.
                 </p>
 
                 <p>
-                  I enjoy turning ideas
-                  into practical
-                  applications using
-                  React, Node.js,
-                  Express and MongoDB,
-                  while regularly
-                  strengthening my
-                  fundamentals through
-                  C++, DSA, OOP and DBMS.
+                  I enjoy developing complete
+                  applications using React,
+                  Node.js, Express and MongoDB,
+                  designing REST APIs, working
+                  with authentication and
+                  databases, and learning cloud
+                  architecture and deployment
+                  practices on AWS.
                 </p>
 
                 <div className="profile-tags">
@@ -785,12 +790,12 @@ function App() {
                   </span>
 
                   <span>
-                    <SiCplusplus />
-                    C++
+                    <FaReact />
+                    Frontend
                   </span>
 
                   <span>
-                    <FaDatabase />
+                    <FaNodeJs />
                     Backend
                   </span>
 
@@ -1093,6 +1098,16 @@ function App() {
                   C
                 </span>
 
+                <span>
+                  <SiPython />
+                  Python
+                </span>
+
+                <span>
+                  <FaJava />
+                  Java
+                </span>
+
               </div>
 
             </div>
@@ -1214,6 +1229,14 @@ function App() {
                   MySQL
                 </span>
 
+                <span>
+                  Oracle
+                </span>
+
+                <span>
+                  DynamoDB
+                </span>
+
               </div>
 
             </div>
@@ -1264,39 +1287,59 @@ function App() {
 
             </div>
 
-            <div className="skill-card reveal">
+            <div className="skill-card aws-skill-card reveal">
 
               <div className="skill-card-shine" />
 
               <div className="skill-card-heading">
 
-                <FaDatabase
-                  className="skill-main-icon"
+                <FaAws
+                  className="skill-main-icon aws-main-icon"
                 />
 
-                <h3>
-                  Core Concepts
-                </h3>
+                <div>
+                  <h3>
+                    Cloud Computing
+                  </h3>
+
+                  <p className="skill-card-subtitle">
+                    Amazon Web Services
+                  </p>
+                </div>
 
               </div>
 
-              <div className="skill-tags">
+              <div className="aws-competency-grid">
 
-                <span>
-                  DSA
-                </span>
+                <div className="aws-competency">
+                  <span className="aws-competency-label">
+                    Infrastructure
+                  </span>
 
-                <span>
-                  OOP
-                </span>
+                  <strong>
+                    EC2 · VPC · ELB
+                  </strong>
+                </div>
 
-                <span>
-                  DBMS
-                </span>
+                <div className="aws-competency">
+                  <span className="aws-competency-label">
+                    Data & Storage
+                  </span>
 
-                <span>
-                  JWT
-                </span>
+                  <strong>
+                    S3 · RDS · DynamoDB
+                  </strong>
+                </div>
+
+                <div className="aws-competency">
+                  <span className="aws-competency-label">
+                    Serverless & Ops
+                  </span>
+
+                  <strong>
+                    Lambda · IAM · CloudWatch
+                  </strong>
+                </div>
 
               </div>
 

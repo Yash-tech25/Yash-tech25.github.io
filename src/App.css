@@ -2001,12 +2001,15 @@ img {
     repeat(3, 1fr);
 
   gap: 18px;
+
+  align-items: stretch;
 }
 
 .skill-card {
   position: relative;
 
-  min-height: 195px;
+  min-height: 208px;
+  height: 100%;
 
   padding: 25px;
 
@@ -2227,6 +2230,172 @@ img {
   font-size: 11px;
 
   font-weight: 800;
+}
+
+/* =========================================
+   AWS CLOUD SKILLS
+========================================= */
+
+.aws-skill-card {
+  position: relative;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(
+        255,
+        153,
+        0,
+        0.055
+      ),
+      rgba(
+        124,
+        58,
+        237,
+        0.028
+      )
+    );
+}
+
+.aws-skill-card::after {
+  content: "";
+
+  position: absolute;
+
+  width: 150px;
+  height: 150px;
+
+  right: -65px;
+  bottom: -80px;
+
+  border-radius: 50%;
+
+  pointer-events: none;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(
+        255,
+        153,
+        0,
+        0.11
+      ),
+      transparent 68%
+    );
+}
+
+.aws-skill-card:hover {
+  border-color:
+    rgba(
+      255,
+      153,
+      0,
+      0.34
+    );
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(
+        255,
+        153,
+        0,
+        0.075
+      ),
+      rgba(
+        124,
+        58,
+        237,
+        0.04
+      )
+    );
+}
+
+.aws-main-icon {
+  color: #ff9900;
+}
+
+.skill-card-subtitle {
+  margin-top: 3px;
+
+  color: #717482;
+
+  font-size: 10px;
+
+  font-weight: 600;
+
+  letter-spacing: 0.35px;
+}
+
+.aws-competency-grid {
+  position: relative;
+
+  display: grid;
+
+  grid-template-columns:
+    1fr;
+
+  gap: 8px;
+
+  z-index: 2;
+}
+
+.aws-competency {
+  padding:
+    8px 10px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content:
+    space-between;
+
+  gap: 12px;
+
+  border-radius: 10px;
+
+  background:
+    rgba(
+      255,
+      255,
+      255,
+      0.025
+    );
+
+  border:
+    1px solid
+    rgba(
+      255,
+      255,
+      255,
+      0.06
+    );
+}
+
+.aws-competency-label {
+  flex-shrink: 0;
+
+  color: #8b8e9c;
+
+  font-size: 9px;
+
+  font-weight: 700;
+
+  letter-spacing: 0.45px;
+
+  text-transform: uppercase;
+}
+
+.aws-competency strong {
+  color: #c9cbd4;
+
+  font-size: 10px;
+
+  font-weight: 600;
+
+  text-align: right;
 }
 
 /* =========================================
@@ -4955,6 +5124,20 @@ span:not(:last-child)::after {
 
   .contact-cta {
     padding: 24px;
+  }
+}
+
+@media (max-width: 600px) {
+  .aws-competency {
+    align-items: flex-start;
+
+    flex-direction: column;
+
+    gap: 4px;
+  }
+
+  .aws-competency strong {
+    text-align: left;
   }
 }
 
