@@ -560,13 +560,13 @@ function App() {
             </h1>
 
             <h2>
-              Full-Stack Developer
+              MERN Full-Stack
 
               <span>
                 {" "}•{" "}
               </span>
 
-              Software Development
+              Software Developer
             </h2>
 
             <p className="hero-description">
